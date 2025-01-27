@@ -16,6 +16,10 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+# Set the environment variable for the API URL
+ENV REACT_APP_API_URL=http://52.90.2.53:5050
+
+
 # Build the React app for production
 RUN npm run build
 
@@ -28,8 +32,6 @@ COPY --from=build /app/dist /usr/share/nginx/html
 # Expose port 80 for the web server
 EXPOSE 80
 
-# Set environment variable for the backend API URL
-ENV REACT_APP_API_URL=http://52.90.2.53:5050
 
 
 # Start nginx server
