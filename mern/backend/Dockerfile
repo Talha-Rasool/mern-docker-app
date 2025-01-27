@@ -1,6 +1,5 @@
 
 
-
 # Use the official Node.js image as the base
 FROM node:18
 
@@ -22,6 +21,6 @@ EXPOSE 5050
 # Set environment variable for MongoDB connection (placeholder)
 ENV MONGO_URI=mongodb://mongo:27017/mydatabase
 
-# Start the backend server
+# Start the backend server.
 CMD ["npm", "start"]
 
