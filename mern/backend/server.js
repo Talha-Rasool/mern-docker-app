@@ -23,7 +23,7 @@ const app = express();
 
 // Configure CORS for production
 app.use(cors({
-  origin: "http://your-ec2-public-ip-or-domain",  // e.g., http://52.90.2.53
+  origin: "http://3.80.207.61",  // e.g., http://52.90.2.53
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
