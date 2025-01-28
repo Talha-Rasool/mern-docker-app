@@ -17,7 +17,7 @@ RUN npm install
 COPY . .
 
 # Set the environment variable for the API URL
-ENV REACT_APP_API_URL=http://52.90.2.53:5050
+ENV REACT_APP_API_URL=http://backend:5050
 
 
 # Build the React app for production
